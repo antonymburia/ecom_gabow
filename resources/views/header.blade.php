@@ -12,25 +12,35 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">shop</a>
                 </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        My account
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">profile</a></li>
-                        <li><a class="dropdown-item" href="#">settings</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">logout</a></li>
-                    </ul>
+
+                <li class="nav-item">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
                 </li>
+
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+            <div class="dropdown d-flex">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Account settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
