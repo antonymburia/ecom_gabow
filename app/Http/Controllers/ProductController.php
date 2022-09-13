@@ -8,6 +8,7 @@ class ProductController extends Controller
 {
     //
     function index(){
-        return Product::all();
+        $data= Product::all();
+        return view('product',['products'=>$data]);
     }
 }

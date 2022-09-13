@@ -17,5 +17,18 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     
 </body>
-
+<style>
+    img.slider-img{
+        height: 400px !important
+    }
+    .trending-img{
+        float: left;
+        padding: 2%;
+        
+    }
+    .trending-product{
+        width: 250px;
+        height: 200px;
+    }
+</style>
 </html>
