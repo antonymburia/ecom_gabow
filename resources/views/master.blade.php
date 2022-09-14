@@ -33,11 +33,26 @@
     .product-detail{
         width: 100%;
     }
+    .detail-img{
+        width: 100%;
+        height: auto;
+    }
     .product-detail img{
         height: 20em;
     }
     .search-box{
         width: 500px !important
+    }
+    .search-results{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .searched-item{
+        margin: 2%;
+    }
+    .search-img{
+        width:100%;
+        height: auto;
     }
 </style>
 </html>

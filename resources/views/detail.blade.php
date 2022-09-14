@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="product-detail">
-                <img src="{{ $product['gallery'] }}" alt="">
+                <img class="detail-img" src="{{ $product['gallery'] }}" alt="">
 I
             </div>
         </div>
