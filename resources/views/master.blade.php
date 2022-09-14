@@ -30,5 +30,11 @@
         width: 250px;
         height: 200px;
     }
+    .product-detail{
+        width: 100%;
+    }
+    .product-detail img{
+        height: 20em;
+    }
 </style>
 </html>
