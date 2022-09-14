@@ -36,5 +36,8 @@
     .product-detail img{
         height: 20em;
     }
+    .search-box{
+        width: 500px !important
+    }
 </style>
 </html>

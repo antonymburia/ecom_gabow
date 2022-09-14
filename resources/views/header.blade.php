@@ -16,10 +16,10 @@
                 </li>
 
                 <li class="nav-item">
-                    <form>
+                    <form action="/search">
                         <div class="row">
                             <div class="col">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control me-2 search-box" type="search" placeholder="Search" aria-label="Search" name="query">
                             </div>
                             <div class="col">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
