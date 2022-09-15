@@ -60,6 +60,19 @@
         width: 100%;
         height: auto;
     }
+    .cart-total{
+        font-weight: 900;
+        font-size: 20;
+        color: red;
+    }
+    .cart-link{
+        text-decoration: none;
+        font-weight: 900;
+        
+    }
+    .no-bullets{
+        list-style-type: none;
+    }
 </style>
 
 </html>

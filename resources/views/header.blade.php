@@ -1,3 +1,8 @@
+<?php
+use App\Http\Controllers\ProductController;
+$total = ProductController::cartItem();
+?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
@@ -43,7 +48,7 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="/">Gabow Computers</a>
             </div>
-            <li class="nav-item">
+            <li class="nav-item no-bullets">
                 <form action="/search">
                     <div class="row">
                         <div class="col">
@@ -56,8 +61,8 @@
                 </form>
             </li>
 
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Cart&nbsp;<i class="fa  fa-shopping-basket" style="font-size:30px;color:red;"></i></i></a></li>
+            <ul class="nav navbar-nav ">
+                <li class="active "><a href="#" class="cart-link">Cart&nbsp;<i class="fa  fa-shopping-basket" style="font-size:30px;color:black;"></i></i> </a><sup class="cart-total">({{$total}})</sup></li>
             </ul>
         </div>
     </nav>
