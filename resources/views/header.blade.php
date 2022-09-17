@@ -42,7 +42,15 @@ if (session()->has('user')) {
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">logout</a></li>
+                    @if(session()->has('user'))
+                    <li><a class="dropdown-item" href="/logout">logout</a></li>
+                    
+                    @else
+                        <li><a class="dropdown-item" href="/login">login</a></li>
+
+
+                    @endif
+
                 </ul>
             </div>
         </div>
@@ -68,7 +76,7 @@ if (session()->has('user')) {
             </li>
 
             <ul class="nav navbar-nav ">
-                <li class="active "><a href="#" class="cart-link">Cart&nbsp;<i class="fa  fa-shopping-basket" style="font-size:30px;color:black;"></i></i> </a><sup class="cart-total">({{$total}})</sup></li>
+                <li class="active "><a href="/cartList" class="cart-link">Cart&nbsp;<i class="fa  fa-shopping-basket" style="font-size:30px;color:black;"></i></i> </a><sup class="cart-total">({{$total}})</sup></li>
             </ul>
         </div>
     </nav>
