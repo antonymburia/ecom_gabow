@@ -26,7 +26,7 @@ if (session()->has('user')) {
                     <a class="nav-link" href="#">shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">checkout</a>
+                    <a class="nav-link" href="/ordernow">checkout</a>
                 </li>
 
 

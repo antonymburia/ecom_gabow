@@ -36,5 +36,8 @@
         @endforeach
 
     </table>
+    <a href="/ordernow">
+        <button>Order Now</button>
+    </a>
 </div>
 @endsection
