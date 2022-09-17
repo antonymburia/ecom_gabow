@@ -22,7 +22,7 @@
                 <img class="trending-product" src="{{ $item->gallery }}" style="width: 80px; height:auto;">
             </td>
             <td>
-                <h5>{{ $item->name }}</h5>
+                <b>{{ $item->name }}</b>
 
             </td>
             <td>
