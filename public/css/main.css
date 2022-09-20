@@ -1,0 +1,28 @@
+.dash-btn button {
+    height: 4em;
+    width: 100%;
+    margin: 1px;
+}
+
+.dash-btn {
+
+    margin-top: 2%;
+    font-size: 200%;
+    font-weight: 800;
+
+}
+
+.dash-row {
+    margin-top: 2%;
+}
+
+.dash-row .card {
+    height: 5em;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+

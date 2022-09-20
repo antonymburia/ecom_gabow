@@ -70,7 +70,7 @@ class ProductController extends Controller
             ->where('cart.user_id', $userId)
             ->sum('products.price');
 
-        return view('orders', ['total' => $total]);
+        return view('ordernow', ['total' => $total]);
     }
     function checkout(Request $req)
     {

@@ -32,13 +32,14 @@
         </tr>
         <tr>
             <td>
-            <a href="/ordernow">
-            <button>Order Now</button>
-        </a>
+            
             </td>
         </tr>
         
         @endforeach
+        <a href="/ordernow">
+            <button>Order Now</button>
+        </a>
 
 
         
