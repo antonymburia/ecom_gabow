@@ -23,10 +23,13 @@ if (session()->has('user')) {
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">shop</a>
+                    <a class="nav-link" href="#">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ordernow">checkout</a>
+                    <a class="nav-link" href="/ordernow">Checkout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/myorders">Orders</a>
                 </li>
 
 
@@ -47,8 +50,7 @@ if (session()->has('user')) {
                     
                     @else
                         <li><a class="dropdown-item" href="/login">login</a></li>
-
-
+                        
                     @endif
 
                 </ul>
