@@ -70,7 +70,7 @@ class ProductController extends Controller
             ->where('cart.user_id', $userId)
             ->sum('products.price');
 
-        return view('ordernow', ['total' => $total]);
+        return view('orders', ['total' => $total]);
     }
     function checkout(Request $req)
     {
@@ -93,7 +93,16 @@ class ProductController extends Controller
 
             Cart::where('user_id', $userId)->delete();
             return redirect('/');
-
         }
+    }
+    function myOrders()
+    {
+        $userId = session()->get('user')['id'];
+        $orders = DB::table('orders')
+            ->join('products', 'orders.product_id', '=', 'products.id')
+            ->where('orders.user_id', $userId)
+            ->get();
+
+        return view('orders', ['orders' => $orders]);
     }
 }
