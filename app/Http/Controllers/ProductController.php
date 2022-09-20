@@ -82,7 +82,7 @@ class ProductController extends Controller
             $order->user_id = $cart['user_id'];
             $order->status = "pending";
             $order->payment_method = "paypal";
-            $order->first_name = "$req->firstName";
+            $order->first_name = $req->firstName;
             $order->last_name = $req->lastName;
             $order->phone_number = $req->phone_number;
             $order->email = $req->email;
