@@ -28,7 +28,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="dash-button">
-                                <button class="button btn-success">Add Products</button>
+                                <button class="button btn-success addproducts" data-bs-toggle="modal" data-bs-target="#myModal">Add Products</button>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -41,31 +41,65 @@
                                 <button class="button btn-success">Add Users</button>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
                 <!-- dashboard content -->
                 <div class="main-content">
 
-                    <!-- products code goes here -->
-                    <div class="adminproducts">
-                        hello
+                    <div class="dash-items">
+                        <!-- products code goes here -->
+                        <div class="adminproducts">
+                            hello
+                        </div>
+
+                        <!-- orders code goes here -->
+                        <div class="adminorders">
+                            orders
+                        </div>
+
+                        <!-- payments code goes here -->
+                        <div class="adminpayments">
+                            payments
+                        </div>
+
+                        <!-- users code goes here -->
+                        <div class="adminusers">
+                            users
+                        </div>
                     </div>
 
-                    <!-- orders code goes here -->
-                    <div class="adminorders">
-                        orders
-                    </div>
+                    <div class="right-pannel">
+                        <!-- add product code goes here -->
+                        <div class="add-products">
+                            <form action="" method="POST">
+                                <div class="mb-3 mt-3">
+                                    <label for="productname" class="form-label">Productname:</label>
+                                    <input type="text" class="form-control" id="productname" placeholder="Enter Productname" name="productname">
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="price" class="form-label">price:</label>
+                                    <input type="number" class="form-control" id="price" placeholder="Enter price" name="price">
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="Description">Product Description:</label>
+                                    <textarea class="form-control" rows="5" id="description" name="text"></textarea>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="category">Category:</label>
+                                    <select class="form-select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
 
-                    <!-- payments code goes here -->
-                    <div class="adminpayments">
-                        payments
-                    </div>
 
-                    <!-- users code goes here -->
-                    <div class="adminusers">
-                        users
+                                <button type="submit" class="btn btn-primary">Add Product</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,8 @@ $(document).ready(function () {
         $(".adminusers").hide();
         $(".adminorders").hide();
         $(".adminproducts").show();
+        $(".add-products").hide();
+       
 
     });
 });
@@ -16,6 +18,7 @@ $(document).ready(function () {
         $(".adminpayments").hide();
         $(".adminusers").hide();
         $(".adminproducts").hide();
+        $(".add-products").hide();
         $(".adminorders").show();
 
 
@@ -24,11 +27,12 @@ $(document).ready(function () {
 
 // Payments
 $(document).ready(function () {
-    $(".adminpayments").hide();   
+    $(".adminpayments").hide();
     $(".payments-show").click(function () {
         $(".adminusers").hide();
         $(".adminorders").hide();
         $(".adminproducts").hide();
+        $(".add-products").hide();
         $(".adminpayments").show();
 
     });
@@ -36,13 +40,24 @@ $(document).ready(function () {
 
 // Users
 $(document).ready(function () {
-    $(".adminusers").hide();   
+    $(".adminusers").hide();
     $(".users-show").click(function () {
         $(".adminpayments").hide();
         $(".adminorders").hide();
         $(".adminproducts").hide();
         $(".adminpayments").hide();
+        $(".add-products").hide();
         $(".adminusers").show();
+
+    });
+});
+
+// add products view
+$(document).ready(function () {
+    $(".add-products").hide();
+    $(".addproducts").click(function () {
+        $(".dash-items").hide();
+        $(".add-products").show();
 
     });
 });
