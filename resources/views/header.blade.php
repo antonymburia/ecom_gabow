@@ -58,7 +58,7 @@ if (session()->has('user')) {
 
                     @else
                     <li><a class="dropdown-item" href="/login">login</a></li>
-
+                    
                     @endif
 
                 </ul>

@@ -6,17 +6,17 @@
             <div class="container">
                 <div class="dash-btn">
                     <div class="products">
-                        <button type="button" class="btn-primary">products</button>
+                        <button type="button" class="btn-primary products-show">products</button>
                     </div>
-                    
+
                     <div class="orders">
-                        <button type="button" class="btn-primary">Orders</button>
+                        <button type="button" class="btn-primary orders-show">Orders</button>
                     </div>
                     <div class="payments">
-                        <button type="button" class="btn-primary">payments</button>
+                        <button type="button" class="btn-primary payments-show "> payments</button>
                     </div>
                     <div class="fulfilled">
-                        <button type="button" class="btn-primary">users</button>
+                        <button type="button" class="btn-primary users-show">users</button>
                     </div>
                 </div>
 
@@ -38,9 +38,34 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- dashboard content -->
+                <div class="main-content">
+
+                    <!-- products code goes here -->
+                    <div class="adminproducts">
+                        hello
+                    </div>
+
+                    <!-- orders code goes here -->
+                    <div class="adminorders">
+                        orders
+                    </div>
+
+                    <!-- payments code goes here -->
+                    <div class="adminpayments">
+                        payments
+                    </div>
+
+                    <!-- users code goes here -->
+                    <div class="adminusers">
+                        users
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 @endsection
