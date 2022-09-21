@@ -27,7 +27,12 @@ Route::get('/dashboard',function () {
 Route::get('/shop',function () {
     return view('shop');
 });
-
+Route::get('/profile',function () {
+    return view('profile');
+});
+Route::get('/accountsettings',function () {
+    return view('accountsettings');
+});
 
 Route::post("/login", [UserController::class,'login']);
 Route::post("/register", [UserController::class,'register']);

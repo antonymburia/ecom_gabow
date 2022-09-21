@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProductController;
 
 $total = 0;
-$user=session()->get('user.role');
+$user = session()->get('user.role');
 
 
 if (session()->has('user')) {
@@ -27,7 +27,7 @@ if (session()->has('user')) {
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="/shop">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/ordernow">Checkout</a>
@@ -49,17 +49,16 @@ if (session()->has('user')) {
                     My account
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Account settings</a></li>
+                    <li><a class="dropdown-item" href="/profile">Profile</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
                     @if(session()->has('user'))
                     <li><a class="dropdown-item" href="/logout">logout</a></li>
-                    
+
                     @else
-                        <li><a class="dropdown-item" href="/login">login</a></li>
-                        
+                    <li><a class="dropdown-item" href="/login">login</a></li>
+
                     @endif
 
                 </ul>
