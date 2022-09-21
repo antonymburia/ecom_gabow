@@ -29,15 +29,16 @@ if (session()->has('user')) {
                 <li class="nav-item">
                     <a class="nav-link" href="/shop">Shop</a>
                 </li>
+                @if($user == 'admin')
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">dashboard</a>
+                </li>
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="/ordernow">Checkout</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/myorders">Orders</a>
-                </li>
-                @if($user == 'admin')
-                <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">dashboard</a>
                 </li>
                 @endif
 
@@ -58,7 +59,7 @@ if (session()->has('user')) {
 
                     @else
                     <li><a class="dropdown-item" href="/login">login</a></li>
-                    
+
                     @endif
 
                 </ul>

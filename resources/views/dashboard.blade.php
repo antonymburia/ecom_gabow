@@ -26,16 +26,22 @@
             <div class="container">
                 <div class="dash-row">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                .
+                        <div class="col-md-4">
+                            <div class="dash-button">
+                                <button class="button btn-success">Add Products</button>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card">
-                                .
+                        <div class="col-md-4">
+                            <div class="dash-button">
+                                <button class="button btn-success">Add Order</button>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="dash-button">
+                                <button class="button btn-success">Add Users</button>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
 

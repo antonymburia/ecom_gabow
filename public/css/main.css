@@ -3,13 +3,17 @@
     width: 100%;
     margin: 1px;
 }
-
-.dash-btn {
-
+.dash-btn{
     margin-top: 2%;
-    font-size: 200%;
-    font-weight: 800;
+    height: 100%;
+    background-color: #0000 !important
+}
 
+.dash-btn button{
+    margin-top: 4%;
+    text-align: center;
+    height: 120px;
+    width: 100%; 
 }
 
 .dash-row {
@@ -24,5 +28,12 @@
     display: none;
     background-color: #262626;
     padding-left: 8px;
+}
+.dash-button button{
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    
+    
 }
 
