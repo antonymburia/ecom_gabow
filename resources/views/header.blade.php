@@ -3,9 +3,13 @@
 use App\Http\Controllers\ProductController;
 
 $total = 0;
+$user=session()->get('user.role');
+
+
 if (session()->has('user')) {
     $total = ProductController::cartItem();
 }
+
 
 ?>
 
@@ -31,6 +35,11 @@ if (session()->has('user')) {
                 <li class="nav-item">
                     <a class="nav-link" href="/myorders">Orders</a>
                 </li>
+                @if($user == 'admin')
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">dashboard</a>
+                </li>
+                @endif
 
 
             </ul>

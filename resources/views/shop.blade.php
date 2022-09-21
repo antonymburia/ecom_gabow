@@ -182,7 +182,7 @@
               <p>Category</p>
             </a>
             <h6 class="mb-3">
-              <s>Tsh61.99</s><strong class="ms-2 text-danger">Tsh50.99</strong>
+              <s>Tsh 61.99</s><strong class="ms-2 text-danger">Tsh 50.99</strong>
             </h6>
           </div>
         </div>
