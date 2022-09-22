@@ -13,6 +13,9 @@
             <th>
                 price
             </th>
+            <th>
+                Remove from Cart
+            </th>
 
 
         </tr>
@@ -28,23 +31,24 @@
             <td>
                 {{ $item->price }}
             </td>
-            
-        </tr>
-        <tr>
             <td>
-            
+                <a href="/removecart/{{ $item->cart_id }}">
+                    <button>Remove From Cart</button>
+                </a>
             </td>
         </tr>
-        
-        @endforeach
-        <a href="/ordernow">
-            <button>Order Now</button>
-        </a>
+        <tr>
 
 
-        
+            @endforeach
+            <a href="/ordernow">
+                <button>Order Now</button>
+            </a>
 
-        
+
+
+
+
     </table>
 
 

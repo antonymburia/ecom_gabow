@@ -7,8 +7,6 @@ $(document).ready(function () {
         $(".add-user").hide();
         $(".adminproducts").show();
         $(".add-products").hide();
-
-
     });
 });
 
@@ -22,8 +20,6 @@ $(document).ready(function () {
         $(".add-products").hide();
         $(".add-user").hide();
         $(".adminorders").show();
-
-
     });
 });
 
@@ -62,7 +58,6 @@ $(document).ready(function () {
     $(".addproducts").click(function () {
         $(".add-user").hide();
         $(".add-products").show();
-
     });
 });
 

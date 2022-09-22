@@ -8,6 +8,7 @@ $user = session()->get('user.role');
 
 if (session()->has('user')) {
     $total = ProductController::cartItem();
+    $person = session()->get('user.name');
 }
 
 
@@ -46,19 +47,27 @@ if (session()->has('user')) {
             </ul>
 
             <div class="dropdown d-flex">
+                @if(session()->has('user'))
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    My account
+                    {{ $person }}
                 </a>
+                @else
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Account
+                </a>
+                @endif
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    @if(session()->has('user'))
                     <li><a class="dropdown-item" href="/profile">Profile</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    @if(session()->has('user'))
                     <li><a class="dropdown-item" href="/logout">logout</a></li>
 
                     @else
                     <li><a class="dropdown-item" href="/login">login</a></li>
+                    <li><a class="dropdown-item" href="/register">register</a></li>
 
                     @endif
 
