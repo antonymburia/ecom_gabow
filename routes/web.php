@@ -33,9 +33,12 @@ Route::get('/profile',function () {
 Route::get('/accountsettings',function () {
     return view('accountsettings');
 });
+Route::get('/register',function () {
+    return view('register');
+});
 
 Route::post("/login", [UserController::class,'login']);
-Route::post("/register", [UserController::class,'register']);
+Route::post("/createuser", [UserController::class,'register']);
 Route::get("/", [ProductController::class,'index']);
 Route::get("detail/{id}", [ProductController::class,'detail']);
 Route::get("/search", [ProductController::class,'search']);

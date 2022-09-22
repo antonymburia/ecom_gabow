@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(".adminorders").hide();
         $(".adminproducts").show();
         $(".add-products").hide();
-       
+
 
     });
 });
@@ -56,7 +56,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".add-products").hide();
     $(".addproducts").click(function () {
-        $(".dash-items").hide();
         $(".add-products").show();
 
     });

@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-        <form action="register" method="post">
+        <form action="/createuser" method="POST">
             @csrf
     
             <!-- Name input -->
@@ -30,7 +30,7 @@
             </div>
 
             <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
+            <div class="form-check d-flex justify-content-center mb-4">•••••••••
                 <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText" />
                 <label class="form-check-label" for="registerCheck">
                     I have read and agree to the terms
