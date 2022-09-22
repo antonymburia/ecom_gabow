@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="dash-button">
-                                <button class="button btn-success">Add Users</button>
+                                <button class="button btn-success adduser">Add Users</button>
                             </div>
                         </div>
 
@@ -77,6 +77,39 @@
                             <button type="submit" class="btn btn-primary">Add Product</button>
                         </form>
                     </div>
+
+                    <!-- add user code goes here -->
+                    <div class="add-user">
+                        <form action="" method="POST">
+                            <div class="mb-3 mt-3">
+                                <label for="fullname" class="form-label">full name:</label>
+                                <input type="text" class="form-control" id="fullname" placeholder="Enter full name" name="fullname">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="number" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="password" class="form-label">password:</label>
+                                <input type="number" class="form-control" id="password" placeholder="Enter password" name="password">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="password" class="form-label">Repeat Password:</label>
+                                <input type="number" class="form-control" id="repeatpassword" placeholder=" repeat Password" name="repeatpassword">
+                            </div>
+                            
+                            <div class="mb-3 mt-3">
+                                <label for="role">Role:</label>
+                                <select class="form-select">
+                                    <option>user</option>
+                                    <option>admin</option>
+                                    <option>superuser</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Add User</button>
+                        </form>
+                    </div>
                 </div>
 
                 <!-- dashboard content -->
@@ -103,8 +136,6 @@
                             users
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

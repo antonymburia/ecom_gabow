@@ -30,7 +30,7 @@
             </div>
 
             <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">•••••••••
+            <div class="form-check d-flex justify-content-center mb-4">
                 <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText" />
                 <label class="form-check-label" for="registerCheck">
                     I have read and agree to the terms
@@ -44,3 +44,4 @@
 </div>
 </div>
 @endsection
+
