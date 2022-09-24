@@ -3,20 +3,22 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
-            <div class="container">
-                <div class="dash-btn">
-                    <div class="products">
-                        <button type="button" class="btn-primary products-show">Products</button>
-                    </div>
-                    <div class="orders">
-                        <button type="button" class="btn-primary orders-show">Orders</button>
-                    </div>
-                    <div class="payments">
-                        <button type="button" class="btn-primary payments-show "> Payments</button>
-                    </div>
-                    <div class="fulfilled">
-                        <button type="button" class="btn-primary users-show">Users</button>
+        <div class="col-md-3 ">
+            <div class="container ">
+                <div class="scroll">
+                    <div class="dash-btn">
+                        <div class="products">
+                            <button type="button" class="btn-primary products-show">Products</button>
+                        </div>
+                        <div class="orders">
+                            <button type="button" class="btn-primary orders-show">Orders</button>
+                        </div>
+                        <div class="payments">
+                            <button type="button" class="btn-primary payments-show "> Payments</button>
+                        </div>
+                        <div class="fulfilled">
+                            <button type="button" class="btn-primary users-show">Users</button>
+                        </div>
                     </div>
                 </div>
 
