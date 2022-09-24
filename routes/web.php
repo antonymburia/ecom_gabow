@@ -39,6 +39,7 @@ Route::get('/register',function () {
 
 Route::post("/login", [UserController::class,'login']);
 Route::post("/createuser", [UserController::class,'register']);
+Route::post("/adduser", [UserController::class,'addUser']);
 Route::get("/", [ProductController::class,'index']);
 Route::get("detail/{id}", [ProductController::class,'detail']);
 Route::get("/search", [ProductController::class,'search']);
@@ -48,5 +49,6 @@ Route::get("/removecart/{id}", [ProductController::class,'removeCart']);
 Route::get("/ordernow", [ProductController::class,'orderNow']);
 Route::post("/checkout", [ProductController::class,'checkout']);
 Route::get("/myorders", [ProductController::class,'myOrders']);
+Route::post("/addproduct", [ProductController::class,'addProduct']);
 
 

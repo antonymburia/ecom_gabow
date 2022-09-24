@@ -105,4 +105,23 @@ class ProductController extends Controller
 
         return view('orders', ['orders' => $orders]);
     }
+    function addProduct(Request $req)
+    {
+        $product = new Product;
+        $product->name = $req->name;
+        $product->price = $req->price;
+        $product->description = $req->description;
+        $product->category = $req->category;
+        $product->description = $req->description;
+        if ($req->file('image')) {
+            $file = $req->file('image');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('public/Image'), $filename);
+            $data['image'] = $filename;  
+        }
+        $product->save(); 
+
+
+        return redirect('/login');
+    }
 }

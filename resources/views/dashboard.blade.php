@@ -46,7 +46,8 @@
                 <div class="right-pannel">
                     <!-- add product code goes here -->
                     <div class="add-products">
-                        <form action="" method="POST">
+                        <form action="/addproduct" method="POST">
+                            @csrf
                             <div class="mb-3 mt-3">
                                 <label for="productname" class="form-label">Productname:</label>
                                 <input type="text" class="form-control" id="productname" placeholder="Enter Productname" name="productname">
@@ -57,20 +58,20 @@
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="Description">Product Description:</label>
-                                <textarea class="form-control" rows="5" id="description" name="text"></textarea>
+                                <textarea class="form-control" rows="5" id="description" name="description"></textarea>
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="category">Category:</label>
-                                <select class="form-select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                <select class="form-select" name="category">
+                                    <option>Trending</option>
+                                    <option>Laptops</option>
+                                    <option>Desktops</option>
+                                    <option>Accessories</option>
                                 </select>
                             </div>
                             <div class="mb-3 mt-3">
-                                <label for="productimage">Product Image:</label>
-                                <input type="file" name="productimage" id="fileToUpload">
+                                <label for="image">Product Image:</label>
+                                <input type="file" name="image" id="fileToUpload">
                             </div>
 
 
@@ -80,27 +81,28 @@
 
                     <!-- add user code goes here -->
                     <div class="add-user">
-                        <form action="" method="POST">
+                        <form action="/adduser" method="POST">
+                        @csrf
                             <div class="mb-3 mt-3">
                                 <label for="fullname" class="form-label">full name:</label>
                                 <input type="text" class="form-control" id="fullname" placeholder="Enter full name" name="fullname">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="number" class="form-control" id="email" placeholder="Enter email" name="email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="password" class="form-label">password:</label>
-                                <input type="number" class="form-control" id="password" placeholder="Enter password" name="password">
+                                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="password" class="form-label">Repeat Password:</label>
-                                <input type="number" class="form-control" id="repeatpassword" placeholder=" repeat Password" name="repeatpassword">
+                                <input type="password" class="form-control" id="repeatpassword" placeholder=" repeat Password" name="repeatpassword">
                             </div>
                             
                             <div class="mb-3 mt-3">
                                 <label for="role">Role:</label>
-                                <select class="form-select">
+                                <select class="form-select" name="role">
                                     <option>user</option>
                                     <option>admin</option>
                                     <option>superuser</option>
