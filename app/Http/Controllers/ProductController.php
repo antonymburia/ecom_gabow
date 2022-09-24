@@ -23,6 +23,11 @@ class ProductController extends Controller
         $data = Product::all();
         return view('shop', ['products' => $data]);
     }
+    function adminViewProducts()
+    {
+        $data = Product::all();
+        return view('dashboard', ['products' => $data]);
+    }
     function detail($id)
     {
         $data = Product::find($id);

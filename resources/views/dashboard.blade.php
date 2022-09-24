@@ -1,5 +1,6 @@
 @extends('master')
 @section('content')
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
@@ -82,7 +83,7 @@
                     <!-- add user code goes here -->
                     <div class="add-user">
                         <form action="/adduser" method="POST">
-                        @csrf
+                            @csrf
                             <div class="mb-3 mt-3">
                                 <label for="fullname" class="form-label">full name:</label>
                                 <input type="text" class="form-control" id="fullname" placeholder="Enter full name" name="fullname">
@@ -99,7 +100,7 @@
                                 <label for="password" class="form-label">Repeat Password:</label>
                                 <input type="password" class="form-control" id="repeatpassword" placeholder=" repeat Password" name="repeatpassword">
                             </div>
-                            
+
                             <div class="mb-3 mt-3">
                                 <label for="role">Role:</label>
                                 <select class="form-select" name="role">
@@ -108,7 +109,7 @@
                                     <option>superuser</option>
                                 </select>
                             </div>
-                            
+
                             <button type="submit" class="btn btn-primary">Add User</button>
                         </form>
                     </div>
@@ -120,7 +121,27 @@
                     <div class="dash-items">
                         <!-- products code goes here -->
                         <div class="adminproducts">
-                            hello
+                            <h3><b>Products</b></h3>
+                            <table>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>decription</th>
+                                    <th>category</th>
+                                    <th>price</th>
+                                </tr>
+                                @foreach ($products as $item)
+                                <tr>
+                                    <td><img class="trending-product" src="{{ $item->gallery }}" style="width: 80px; height:auto;"></td>
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{ $item->description }}</td>
+                                    <td>{{ $item->category }}</td>
+                                    <td>{{ $item->price }}</td>
+                                    <td><button class="btn-danger">delete</button></td>
+                                    <td><button class="edit">edit</button></td>
+                                </tr>
+                                @endforeach
+                            </table>
                         </div>
 
                         <!-- orders code goes here -->
