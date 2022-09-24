@@ -24,9 +24,6 @@ Route::get('/logout', function () {
 Route::get('/dashboard',function () {
     return view('dashboard');
 });
-Route::get('/shop',function () {
-    return view('shop');
-});
 Route::get('/profile',function () {
     return view('profile');
 });
@@ -36,7 +33,7 @@ Route::get('/accountsettings',function () {
 Route::get('/register',function () {
     return view('register');
 });
-
+Route::get("/shop", [ProductController::class,'shop']);
 Route::post("/login", [UserController::class,'login']);
 Route::post("/createuser", [UserController::class,'register']);
 Route::post("/adduser", [UserController::class,'addUser']);
