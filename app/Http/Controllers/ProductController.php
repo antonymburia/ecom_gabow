@@ -118,20 +118,23 @@ class ProductController extends Controller
     function addProduct(Request $req)
     {
         $product = new Product;
-        $product->name = $req->name;
+        $product->name = $req->productname;
         $product->price = $req->price;
         $product->description = $req->description;
         $product->category = $req->category;
         $product->description = $req->description;
-        if ($req->file('image')) {
+        $product->gallery = "gallerytest";
+        $product->image = $req->input('image');               
+        if ($req->hasFile('image')) {
             $file = $req->file('image');
             $filename = date('YmdHi') . $file->getClientOriginalName();
-            $file->move(public_path('public/Image'), $filename);
-            $data['image'] = $filename;  
+            $file->move(public_path('public/Images'), $filename);
+            $product['image'] = $filename;  
         }
         $product->save(); 
 
 
-        return redirect('/login');
+        return redirect()->back()->with('success', 'Service Successfully Added');
     }
 }
+
